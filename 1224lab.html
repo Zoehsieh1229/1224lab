@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+	<p id="text"></p>
+	<p id="text1"></p>
+	<p id="text2"></p>
+
+<script>
+	var string;
+	string=window.prompt("Input data: ");
+	var index;
+
+	index=window.prompt("Input a char to search: ");
+	
+	var result=string.indexOf(index);
+	var result1=string.lastIndexOf(index);
+	var result2=string.indexOf(index,3);
+	
+	document.getElementById("text").innerHTML=result;
+	document.getElementById("text1").innerHTML=result1;
+	document.getElementById("text2").innerHTML=result2;
+
+</script>
+	
+</body>
+</html>
